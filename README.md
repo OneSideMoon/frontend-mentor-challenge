@@ -1,2 +1,2 @@
 # frontend-mentor-challenge
-frontend mentor challenges for training web develop
+frontend mentor challenges for training web development
