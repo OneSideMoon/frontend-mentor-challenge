@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: "Overpass", sans-serif;
+}
+
+/* color palette */
+:root{
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --very-light-grey:hsl(213deg, 20%, 22%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+/* mpage main */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--very-dark-blue);
+}
+
+/* rating screen */
+.rating{
+    text-align: left;
+    padding: 3rem;
+    height: 45vh;
+    width: 45vh;
+    background-color: var(--dark-blue);
+    border-radius: 3rem;
+}
+
+/* star icon */
+.star{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    padding: 1.2rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--very-light-grey);
+    border-radius: 50%;
+}
+
+/* font size */
+h1{
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    color: var(--white);
+}
+h2{
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: var(--white);
+}
+p{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: var(--light-grey);
+}
+span{
+    font-size: 1.5rem;
+    color: var(--orange);
+}
+
+/* point design */
+.circles{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3rem auto;
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 5rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color: var(--very-light-grey);
+    color: var(--light-grey);
+    border-radius: 50%;
+}
+
+/* button design */
+.submit{
+    padding: 1.2rem;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+    background-color: var(--orange);
+    border-radius: 3rem;
+    border-style: none;
+}
+
+/* thnx screen */
+.thnx{
+    text-align: center;
+    padding: 3rem;
+    height: 45vh;
+    width: 45vh;
+    background-color: var(--dark-blue);
+    border-radius: 3rem;
+}
+.back{
+    margin: 3rem auto;
+    padding: 1rem;
+    width: 50%;
+    background-color: var(--very-light-grey);
+    border-radius: 3rem;
+}
+.send>img{
+    height: 14vh;
+}
+
+/* animation */
+.submit:hover{
+    background-color: var(--white);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.circle:hover{
+    background-color: var(--orange);
+    color: var(--very-dark-blue);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* JS class changer */
+.none{
+    display:none  !important;
+    transition: all 1 ease;
+}
+.checked{
+    background-color: var(--white) !important;
+    color: var(--very-dark-blue) !important;
+}
+
+/* responsive design */
+@media screen and (max-width: 1440px) {
+    *{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .rating, .thnx{
+        height: 50vh;
+    }
+}
