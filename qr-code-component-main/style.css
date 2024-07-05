@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* color palette */
+:root{
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);    
+}
+
+/* main design */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 15px;
+    font-family: "Overpass", sans-serif;
+    background-color: var(--light-gray);
+}
+
+/* card design */
+.container{
+    padding: 1.5rem;
+    max-width: 360px;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.2);
+}
+.container img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+/* content design */
+.content{
+    text-align: center;
+    padding: 1.5rem 0.75rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.content h2{
+    padding-bottom: 1rem;
+    color: var(--dark-blue);
+}
+.content p{
+    font-weight: 400;
+    color: var(--grayish-blue);
+}
