@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* color palette */
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue-main: hsl(217, 54%, 11%);
+    --very-dark-blue-card: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* main design */
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--very-dark-blue-main);
+    font-size: 18px;
+    font-family: "Overpass", sans-serif;
+}
+
+/* card design */
+.container{
+    padding: 1.5rem;
+    max-width: 360px;
+    background-color: var(--very-dark-blue-card);
+    border-radius: 1rem;
+}
+
+/* content design */
+.content{
+    margin-bottom: 1rem;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid var(--very-dark-blue-line);
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 1rem;
+}
+.info img{
+    margin-right: 0.5rem;
+    width: auto;
+    height: 1.2rem;
+}
+
+/* coin price and timeline */
+.coin, .timeline{
+    display: flex;
+    flex-direction: row;
+}
+
+/* footer design */
+.footer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 0.5rem;
+}
+.footer img{
+    margin-right: 1rem;
+    max-width: 15%;
+    height: auto;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+/* text style */
+.content h2{
+    padding-bottom: 1rem;
+    color: var(--white);
+}
+.content p{
+    padding-bottom: 1rem;
+    color: var(--soft-blue);
+}
+.footer p{
+    color: var(--soft-blue);
+}
+.footer strong{
+    color: var(--white);
+}
+.coin p{
+    color: var(--cyan);
+}
+
+/* card image hover */
+.image{
+    position: relative;
+}
+.image img{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+.img-hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    height: 98%;
+    width: 100%;
+    opacity: 0;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    border-radius: 1rem;
+}
+.img-hover img{
+    width: 20%;
+    height: 20%;
+}
+.img-hover:hover{
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* animation */
+.content h2:hover, .footer strong:hover{
+    cursor: pointer;
+    color: var(--cyan);
+    transition: all 0.3s ease;
+}
