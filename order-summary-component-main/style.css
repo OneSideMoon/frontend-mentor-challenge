@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* color palette */
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+/* main design */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./img/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    background-attachment: fixed;
+    background-color: var(--pale-blue);
+    font-size: 16px;
+    font-family: "Overpass", sans-serif;
+}
+
+/* card design */
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 360px;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+.container img{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+/* content design */
+.content{
+    padding: 2rem;
+    text-align: center;
+}
+.content button{
+    margin-bottom: 2rem;
+    padding: 1rem;
+    width: 100%;
+    background-color: var(--bright-blue);
+    color: #fff;
+    border-radius: 0.75rem;
+    border-style: none;
+    box-shadow: 1px 0.75rem 1rem hsla(245, 75%, 52%, 0.25);
+}
+
+/* payment section */
+.payment{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 1rem auto 2rem auto;
+    padding: 1rem;
+    background-color: var(--very-pale-blue);
+    border-radius: 0.75rem;
+}
+.payment img{
+    width: 20%;
+}
+.plan{
+    padding-right: 2.5rem;
+}
+
+/* text style */
+.content h1{
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+.content p{
+    padding: 0 1rem;
+    color: var(--desaturated-blue);
+    font-weight: 500;
+}
+.plan strong{
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+.payment a{
+    font-weight: 700;
+    color: var(--bright-blue);
+}
+.cancel{
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    font-weight: 900;
+}
+
+/* animation */
+.payment a:hover{
+    text-decoration: none;
+    opacity: 0.6;
+}
+.container button:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.cancel:hover{
+    color: var(--dark-blue);
+}
+
+@media screen and (max-width:375px) {
+    body{
+        background-image: url(./img/pattern-background-mobile.svg);
+    }
+}
