@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* color palette */
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+/* main design */
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 15px;
+    font-family: "Big Shoulders Display", "Overpass", sans-serif;
+    background-color: var(--very-light-gray);
+}
+.container{
+    display: flex;
+    max-width: 50%;
+    flex-direction: row;
+}
+.container section{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 2.5rem;
+}
+
+/* sedans column */
+.column-1{
+    background-color: var(--bright-orange);
+    border-radius: 1rem 0 0 1rem;
+}
+.column-1 button{
+    color: var(--bright-orange);
+}
+
+/* suvs column */
+.column-2{
+    background-color: var(--dark-cyan);
+}
+.column-2 button{
+    color: var(--dark-cyan);
+}
+
+/* luxury column */
+.column-3{
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 1rem 1rem 0;
+}
+.column-3 button{
+    color: var(--very-dark-cyan);
+}
+
+/* icons */
+img{
+    margin-bottom: 2rem;
+    max-width: 4rem;
+    height: auto;
+}
+
+/* text style */
+.container h2{
+    padding-bottom: 2rem;
+    color: var(--very-light-gray);
+    font-size: 2rem;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+}
+.container p{
+    color: var(--transparent-white);
+    font-size: 1rem;
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-wrap: balance;
+}
+
+/* button */
+button{
+    margin-top: 5rem;
+    bottom: 1rem;
+    padding: 0.75rem;
+    max-width: 70%;
+    background-color: var(--very-light-gray);
+    border-radius: 4rem;
+    border-style: none;
+    font-family: "Overpass", sans-serif;
+    font-weight: 700;
+}
+button:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) {
+    .column-2 button, .column-3 button{
+        margin-top: 6.5rem;
+    }
+}
+@media screen and (max-width: 375px) {
+    .container{
+        flex-direction: column;
+        margin: 5rem auto;
+        max-width: 90%;
+    }
+    .column-1{
+        border-radius: 1rem 1rem 0 0;
+    }
+    .column-3{
+        border-radius: 0 0 1rem 1rem;
+    }
+    button{
+        margin-top: 1.5rem !important;
+        max-width: 50%;
+    }
+}
