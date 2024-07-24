@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* color palette */
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+/* main design */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./img/bg-pattern-top.svg), url(./img/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right 125vh bottom 50vh, left 125vh top 50vh;
+    background-color: var(--dark-cyan);
+    font-size: 18px;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+/* card design */
+.container{
+    max-width: 360px;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-bg{
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+}
+
+/* stats design */
+.stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+/* pp design */
+.pp{
+    position: relative;
+}
+.pp img{
+    position: absolute;
+    top: -3rem;
+    left: -3rem;
+    border-radius: 50%;
+    border: 0.3rem solid #fff;
+}
+
+/* text style */
+.card h2{
+    margin-top: 4rem;
+    font-weight: 700;
+}
+.card span{
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+}
+.card p{
+    text-align: center;
+    margin-top: 0.5rem;
+    padding-bottom: 1.5rem;
+    width: 100%;
+    color: var(--dark-grayish-blue);
+    border-bottom: 0.5px solid var(--dark-gray);
+    font-weight: 400;
+}
+.stats h3{
+    font-weight: 700;
+}
+.stats p{
+    margin-top: 0;
+    font-size: 1rem;
+    border: none;
+    font-weight: 400;
+}
