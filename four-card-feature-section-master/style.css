@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* color palette */
+:root{
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+/* main design */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--very-light-gray);
+}
+.horizontal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.vertical{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    text-align: left;
+    margin: 1rem;
+    padding: 2rem;
+    max-width: 360px;
+    background-color: #fff;
+    box-shadow: 1px 1px 1rem var(--grayish-blue);
+    border-radius: 0.5rem;
+}
+
+/* cards design */
+.supervisor{
+    border-top: 0.25rem solid var(--cyan);
+}
+.builder{
+    border-top: 0.25rem solid var(--red);
+}
+.karma{
+    border-top: 0.25rem solid var(--orange);
+}
+.calculator{
+    border-top: 0.25rem solid var(--blue);
+}
+.icon{
+    display: flex;
+    justify-content: end;
+}
+
+/* text style */
+.card h2{
+    padding-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--very-dark-blue);
+}
+.card p{
+    padding-bottom: 2rem;
+    font-weight: 400;
+    color: var(--grayish-blue);
+}
+header h1{
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: var(--very-dark-blue);
+}
+header strong{
+    font-weight: 600;
+    color: var(--very-dark-blue);
+}
+header p{
+    padding-bottom: 3rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--grayish-blue);
+}
+
+/* responsive design */
+@media screen and (max-width: 1440px) {
+    header p{
+        padding-bottom: 1rem;
+    }
+    .card{
+        padding: 1.5rem;
+    }
+    .card p{
+        padding-bottom: 1rem;
+    }
+}
+@media screen and (max-width:375px) {
+    body{
+        margin: 2rem 1.5rem;
+    }
+    header h1{
+        font-size: 1.5rem;
+    }
+    header p{
+        font-size: 1rem;
+    }
+    br{
+        display: none;
+    }
+    .horizontal{
+        flex-direction: column;
+    }
+    .card{
+        max-width: 100%;
+        margin: 1rem 0;
+    }
+}
