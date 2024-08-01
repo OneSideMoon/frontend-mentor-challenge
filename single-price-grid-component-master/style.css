@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* color palette */
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+/* main design */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--light-gray);
+    font-size: 16px;
+    font-family: "Karla", sans-serif;
+    white-space: pre-line;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 610px;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.2);
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+}
+
+/* join section design */
+.join{
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.join h2{
+    color: var(--cyan);
+}
+.join span{
+    color: var(--bright-yellow);
+}
+
+/* subscription section design */
+.subscription{
+    padding: 2rem;
+    width: 100%;
+    background-color: var(--cyan);
+    border-radius: 0 0 0 0.5rem;
+}
+.subscription button{
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 100%;
+    background-color: var(--bright-yellow);
+    color: #fff;
+    border-radius: 0.25rem;
+    border: none;
+    box-shadow: 0px 1px 0.5rem rgba(0, 0, 0, 0.2);
+}
+.subscription span{
+    padding-right: 0.5rem;
+    font-size: 1.75rem;
+}
+
+/* why us section design */
+.why{
+    padding: 2rem;
+    width: 100%;
+    background-color: hsla(179, 62%, 43%, 0.75);
+    border-radius: 0 0 0.5rem 0;
+}
+
+/* text style */
+p{
+    color: var(--light-gray);
+}
+.join p{
+    color: var(--grayish-blue);
+}
+p{
+    font-weight: 400 !important;
+}
+h2, span{
+    color: #fff;
+    font-weight: 700 !important;
+}
+.subscription>h2, .why>h2{
+    font-size: 1.25rem;
+}
+
+/* responsive design */
+@media screen and (max-width: 375px) {
+    body{
+        margin: 4rem 2rem;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .subscription{
+        border-radius: 0;
+    }
+    .why{
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+}
