@@ -92,3 +92,26 @@ To run the projects locally, follow these steps:
 
 2. Navigate into the project directory:
     cd repo-name
+
+
+## Technologies Used
+
+   - HTML: For structure
+   - CSS: For styling and layout
+   - JavaScript: For dynamic functionality
+
+
+## Contributing
+
+I welcome feedback and contributions. If you have suggestions or fixes, please feel free to open a pull request or create an issue.
+
+
+## Contact
+    
+    - [LinkedIn](https://www.linkedin.com/in/muhammet-batuhan-sahin-965b81216/).
+    - [Email](batuhansahin9040@gmail.com).
+
+
+## License
+
+    - This project is licensed under the [MIT License](https://github.com/OneSideMoon/frontend-mentor-challenge/blob/main/LICENSE).
