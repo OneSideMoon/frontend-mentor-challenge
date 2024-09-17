@@ -110,6 +110,7 @@ I welcome feedback and contributions. If you have suggestions or fixes, please f
 
 If you have any questions or would like to get in touch with me, you can reach me through the following channels:
     - **[LinkedIn](https://www.linkedin.com/in/muhammet-batuhan-sahin-965b81216/)
+    - **[Instagram](https://www.instagram.com/one.side.moon/)
     - **[Email](mailto:batuhansahin9040@gmail.com)
 
 
